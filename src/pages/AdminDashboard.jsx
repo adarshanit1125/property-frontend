@@ -11,6 +11,7 @@ export default function AdminDashboard() {
         location: "",
         price: "",
         image: "",
+        description: "",
     })
 
     const handleChange = (e) => {
@@ -33,7 +34,7 @@ export default function AdminDashboard() {
             await addProperty(form)
         }
 
-        setForm({ _id: null, title: "", location: "", price: "", image: "" })
+        setForm({ _id: null, title: "", location: "", price: "", image: "", description: "" })
     }
 
     const handleEdit = (p) => {
@@ -54,7 +55,14 @@ export default function AdminDashboard() {
                 <input name="location" value={form.location} onChange={handleChange} placeholder="Location" className="border p-3 rounded" />
                 <input name="price" value={form.price} onChange={handleChange} placeholder="Price" className="border p-3 rounded" />
                 <input type="file" accept="image/*" onChange={handleImageUpload} />
-
+                <textarea
+                    name="description"
+                    value={form.description}
+                    onChange={handleChange}
+                    placeholder="Property Description"
+                    rows="4"
+                    className="border p-3 rounded md:col-span-2"
+                />
                 {form.image && (
                     <img src={form.image} className="h-40 w-full object-cover rounded md:col-span-2" />
                 )}
