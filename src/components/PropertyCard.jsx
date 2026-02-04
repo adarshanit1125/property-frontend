@@ -3,7 +3,9 @@ import { Link } from "react-router-dom"
 
 export default function PropertyCard({ property }) {
     return (
-        <Link to={`/properties/${property.id}`}>
+        <Link to={`/properties/${property._id}`}>
+
+
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
