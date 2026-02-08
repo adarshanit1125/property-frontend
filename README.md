@@ -1,16 +1,72 @@
-# React + Vite
+# 🏠 Maa Gayatri Properties – Real Estate Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **MERN-based property management web application** that allows an admin to manage property listings and users to view property details. The application is fully responsive and deployed on cloud platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+- **Frontend (Vercel):** https://maagayatriproperties.vercel.app/
+- **Backend (Render):** https://property-backend-1-co7w.onrender.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+- React Router DOM
+- Framer Motion
+- EmailJS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+
+### Deployment
+- Frontend: **Vercel**
+- Backend: **Render**
+- Database: **MongoDB Atlas**
+- Version Control: **GitHub**
+
+---
+
+## ✨ Features
+
+### 👤 Admin Features
+- Secure **Admin Login (JWT Authentication)**
+- Protected Admin Dashboard
+- Add new properties
+- Edit existing properties
+- Delete properties
+- Upload and compress property images
+- Add detailed property descriptions
+
+### 🌐 User Features
+- View all listed properties
+- View detailed property pages
+- Responsive design (Mobile / Tablet / Desktop)
+- Contact form integrated with EmailJS
+
+---
+
+## 📂 Project Structure
+property/
+├── backend/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ ├── config/
+│ └── server.js
+│
+├── property-website/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── api/
+│ ├── public/
+│ └── vite.config.js
